@@ -2,21 +2,19 @@
 	<div class="mail-list-wrapper">
 		<ul class="mail-list">
 			<li
-				ng-click="selectMessage( message )"
-				ng-repeat="message in mail"
 				class="message"
 			>
-				<h4>{{ message.content.slice( 0, 15 ) }}</h4>
-				<p>{{ message.name }}</p>
+				<h4>I have an exciting opportunity...</h4>
+				<p>Every Recruiter</p>
 			</li>
 		</ul>
 	</div>
 
 	<div class="selected-message">
-		<div ng-if="selectedMessage">
-			<h3>{{ selectedMessage.email }}</h3>
-			<h3>{{ selectedMessage.name }}</h3>
-			<p>{{ selectedMessage.content }}</p>
+		<div>
+			<h3>someone@recruiters.com</h3>
+			<h3>Every Recruiter</h3>
+			<p>I have an exciting opportunity just for you! This message has not gone out to 822 other developers on linkedin.</p>
 		</div>
 	</div>
 </main>
