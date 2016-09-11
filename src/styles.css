@@ -1,0 +1,88 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+nav {
+	align-items: center;
+	background-color: black;
+	display: flex;
+	height: 60px;
+	width: 100%;
+}
+
+.nav-link {
+	align-items: center;
+	display: flex;
+	font-size: 20px;
+	justify-content: center;
+	height: 100%;
+	width: 100px;
+}
+
+.nav-link a {
+	color: white;
+}
+
+.inbox-wrapper {
+	height: calc( 100% - 60px );
+	display: flex;
+}
+
+.mail-list-wrapper {
+	height: 100%;
+	flex: 1;
+	overflow: scroll;
+}
+
+.mail-list {
+	list-style-type: none;
+	padding-left: 10px;
+}
+
+.message {
+	color: grey;
+	cursor: pointer;
+}
+
+.message:hover {
+	color: black;
+}
+
+.selected-message {
+	height: 100%;
+	flex: 4;
+	padding: 30px;
+}
+
+.draft-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 20px;
+}
+
+.draft-input {
+	margin: 10px 0;
+}
+
+.message-draft {
+	resize: none;
+	margin-top: 10px;
+}
+
+.send-button {
+	width: 80px;
+	margin-top: 20px;
+}
+
+.message-preview {
+	margin-top: 20px;
+}
+
+.contacts-wrapper {
+	padding: 30px;
+}
+
+tr {
+	cursor: pointer;
+}

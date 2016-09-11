@@ -1,0 +1,16 @@
+<main class="contacts-wrapper">
+	<table class="table table-bordered table-hover">
+		<tr>
+			<td>Name</td>
+			<td>Company</td>
+			<td>Email</td>
+			<td>Phone #</td>
+		</tr>
+		<tr ng-click="messageContact( contact )" ng-repeat="contact in contacts">
+			<td>{{ contact.name }}</td>
+			<td>{{ contact.company }}</td>
+			<td>{{ contact.email }}</td>
+			<td>{{ contact.phone }}</td>
+		</tr>
+	</table>
+</main>
