@@ -3,6 +3,13 @@ angular.module( "AngularMail" )
 	this.getMail = function() {
 		return mail;
 	}
+
+	// this.getTest = function () {
+	// 	return test;
+	// }
+	//
+	// var test = "THIS IS THE MAIL SERVICE";
+
 } );
 
 var mail = [

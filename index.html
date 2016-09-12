@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="AngularMail">
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -7,12 +7,14 @@
 	<title>ngMail</title>
 </head>
 <body>
-	
+
 <nav>
-	<div class="nav-link"><a>Inbox</a></div>
-	<div class="nav-link"><a>Draft</a></div>
-	<div class="nav-link"><a>Contacts</a></div>
+	<div class="nav-link"><a ui-sref="inbox">Inbox</a></div>
+	<div class="nav-link"><a ui-sref="draft">Draft</a></div>
+	<div class="nav-link"><a ui-sref="contacts">Contacts</a></div>
 </nav>
+
+<ui-view></ui-view>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>

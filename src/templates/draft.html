@@ -3,31 +3,35 @@
 		class="form-control draft-input"
 		type="text"
 		placeholder="To: someone@example.com"
+		ng-model="draft.to"
 	>
 	<input
 		class="form-control draft-input"
 		type="text"
 		placeholder="bcc: someone.else@example.com"
+		ng-model="draft.bcc"
 	>
 	<input
 		class="form-control draft-input"
 		type="text"
 		placeholder="Subject"
+		ng-model="draft.subject"
 	>
 
 	<textarea
 		class="message-draft"
 		cols="30"
 		rows="10"
+		ng-model="draft.content"
 	>
 	</textarea>
 
-	<button class="btn btn-primary send-button">Send</button>
+	<button ng-click="clearDraft()" class="btn btn-primary send-button">Send</button>
 
 	<div class="message-preview">
-		<h3>Preview</h3>
+		<h3>{{ draft.content }}</h3>
 		<p>
-			
+
 		</p>
 	</div>
 </main>
