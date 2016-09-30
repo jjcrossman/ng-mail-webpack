@@ -1,4 +1,4 @@
-angular.module( 'AngularMail' ).controller( 'inboxCtrl', function ( $scope, mailService ) {
+function inboxCtrl( $scope, mailService ) {
 
   function init () {
     $scope.selectedMessage = null;
@@ -11,4 +11,7 @@ angular.module( 'AngularMail' ).controller( 'inboxCtrl', function ( $scope, mail
 
   init();
 
-} );
+}
+
+export default inboxCtrl; // you can use export default on line 1 before function inboxCtrl.
+// like saying module.exports = inboxCtrl;

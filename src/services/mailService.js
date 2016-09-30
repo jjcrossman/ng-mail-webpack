@@ -1,5 +1,4 @@
-angular.module( "AngularMail" )
-.service( "mailService", function() {
+export default function mailService() {
 	this.getMail = function() {
 		return mail;
 	}
@@ -10,7 +9,7 @@ angular.module( "AngularMail" )
 	//
 	// var test = "THIS IS THE MAIL SERVICE";
 
-} );
+}
 
 var mail = [
 	{
