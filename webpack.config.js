@@ -1,5 +1,8 @@
 module.exports = {
-  entry: [ "./src/app.js" ]
+  entry: [
+    "webpack-dev-server/client?http://localhost:8080"
+    , "./src/app.js"
+  ]
   , module: {
     loaders: [
       {
@@ -24,5 +27,8 @@ module.exports = {
   , output: {
     path: __dirname + "/"
     , filename: "bundle.js"
+  }
+  , devServer: {
+    contentBase: "./" //tells webpack where index.html lives
   }
 };
